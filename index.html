@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+    
+    <h2>String Manipulation Functions</h2>
+    <div class="function-container">
+        <h3>Reverse a String</h3>
+        <input type="text" id="reverseInput" placeholder="Enter string">
+        <button onclick="displayResult(reverseString(document.getElementById('reverseInput').value), 'reverseResult')">Reverse</button>
+        <div id="reverseResult" class="result"></div>
+    </div>
+
+    <div class="function-container">
+        <h3>Count Characters</h3>
+        <input type="text" id="countInput" placeholder="Enter string">
+        <button onclick="displayResult(countCharacters(document.getElementById('countInput').value), 'countResult')">Count</button>
+        <div id="countResult" class="result"></div>
+    </div>
+
+    <div class="function-container">
+        <h3>Capitalize Words</h3>
+        <input type="text" id="capitalizeInput" placeholder="Enter sentence">
+        <button onclick="displayResult(capitalizeWords(document.getElementById('capitalizeInput').value), 'capitalizeResult')">Capitalize</button>
+        <div id="capitalizeResult" class="result"></div>
+    </div>
+
+    <h2>Array Functions</h2>
+    <div class="function-container">
+        <h3>Find Maximum</h3>
+        <input type="text" id="maxInput" placeholder="Enter numbers separated by commas">
+        <button onclick="displayResult(findMaximum(document.getElementById('maxInput').value.split(',').map(Number)), 'maxResult')">Max</button>
+        <div id="maxResult" class="result"></div>
+    </div>
+
+    <div class="function-container">
+        <h3>Find Minimum</h3>
+        <input type="text" id="minInput" placeholder="Enter numbers separated by commas">
+        <button onclick="displayResult(findMinimum(document.getElementById('minInput').value.split(',').map(Number)), 'minResult')">Min</button>
+        <div id="minResult" class="result"></div>
+    </div>
+
+    <div class="function-container">
+        <h3>Sum of Array</h3>
+        <input type="text" id="sumInput" placeholder="Enter numbers separated by commas">
+        <button onclick="displayResult(sumOfArray(document.getElementById('sumInput').value.split(',').map(Number)), 'sumResult')">Sum</button>
+        <div id="sumResult" class="result"></div>
+    </div>
+
+    <h2>Mathematical Functions</h2>
+    <div class="function-container">
+        <h3>Factorial</h3>
+        <input type="number" id="factorialInput" placeholder="Enter a number">
+        <button onclick="displayResult(factorial(Number(document.getElementById('factorialInput').value)), 'factorialResult')">Factorial</button>
+        <div id="factorialResult" class="result"></div>
+    </div>
+
+    <div class="function-container">
+        <h3>Prime Number Check</h3>
+        <input type="number" id="primeInput" placeholder="Enter a number">
+        <button onclick="displayResult(isPrime(Number(document.getElementById('primeInput').value)), 'primeResult')">Check Prime</button>
+        <div id="primeResult" class="result"></div>
+    </div>
+
+    <div class="function-container">
+        <h3>Fibonacci Sequence</h3>
+        <input type="number" id="fibonacciInput" placeholder="Enter number of terms">
+        <button onclick="displayResult(fibonacci(Number(document.getElementById('fibonacciInput').value)), 'fibonacciResult')">Generate</button>
+        <div id="fibonacciResult" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
